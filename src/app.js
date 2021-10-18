@@ -1,6 +1,6 @@
 // console.log("merhaba kodlama.io") Gamze Nur Arslanboğa#1193 
 
-let dolarDun = 9.20;
+let dolarDun = 9.21;
 let dolarBugun = 9.30;
 
 // console.log(dolarDun);
