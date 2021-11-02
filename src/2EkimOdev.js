@@ -38,22 +38,18 @@ console.log(findPrime(2, 5));
 
 /////////////////////////////////////////
 
+function getSumOfDivisors(num){
+	let sum = 0;
+	for (let i = 1; i < num; i++) {
+		if (num % i == 0){
+			sum += i;
+		}
+	}
+	return sum;
+}
+
 function checkIfFriendNumbers(num1, num2){
-	let totals = {
-		[num1]: 0,
-		[num2]: 0,
-	}
-	for (let i = 1; i < num1; i++) {
-		if (num1 % i == 0){
-			totals[num1] += i;
-		}
-	}
-	for (let i = 1; i < num2; i++) {
-		if (num2 % i == 0){
-			totals[num2] += i;
-		}
-	}
-	if ((totals[num1] == num2) && (totals[num2] == num1)){
+	if ((getSumOfDivisors(num1) == num2) && (getSumOfDivisors(num2) == num1)){
 		return true;
 	}
 	return false;
