@@ -34,7 +34,7 @@ function findPrime(...numbers){
 	}
 	return primeNumbers;
 }
-console.log(findPrime(2, 5));
+console.log(findPrime(2, 5, 8, 21, 13));
 
 /////////////////////////////////////////
 
@@ -50,11 +50,13 @@ function getSumOfDivisors(num){
 
 function checkIfFriendNumbers(num1, num2){
 	if ((getSumOfDivisors(num1) == num2) && (getSumOfDivisors(num2) == num1)){
-		return true;
+		console.log(`"Girilen iki sayı(${num1}, ${num2}) arkadaş sayıdır."`);
 	}
-	return false;
+	else{
+		console.log(`"Girilen iki sayı(${num1}, ${num2}) arkadaş sayıdı değildir."`);
+	}
 }
-console.log(checkIfFriendNumbers(220, 284) ? "Girilen iki sayı arkadaş sayıdır." : "Girilen iki sayı arkadaş sayı değildir.");
+checkIfFriendNumbers(220, 284);
 
 /////////////////////////////////////////
 
