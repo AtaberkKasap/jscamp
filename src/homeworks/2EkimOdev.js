@@ -49,12 +49,10 @@ function getSumOfDivisors(num){
 }
 
 function checkIfFriendNumbers(num1, num2){
-	if ((getSumOfDivisors(num1) == num2) && (getSumOfDivisors(num2) == num1)){
+	if ((getSumOfDivisors(num1) == num2) && (getSumOfDivisors(num2) == num1))
 		console.log(`"Girilen iki sayı(${num1}, ${num2}) arkadaş sayıdır."`);
-	}
-	else{
+	else
 		console.log(`"Girilen iki sayı(${num1}, ${num2}) arkadaş sayıdı değildir."`);
-	}
 }
 checkIfFriendNumbers(220, 284);
 
@@ -70,6 +68,7 @@ function isNumberPerfect(number){
 	if (sum == number){
 		return true;
 	}
+	return false;
 }
 
 function getPerfectNumbers(limit){
