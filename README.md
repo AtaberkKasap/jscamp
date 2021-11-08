@@ -1,2 +1,2 @@
 # JavaScript Kampı
-Engin Demiroğ'un anlatımı ile JavaScript kampı.
+Engin Demiroğ'un anlattığı JavaScript kampı.
